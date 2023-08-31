@@ -41,22 +41,14 @@ export function Fetching() {
     }
   }, [location]);
 
+  console.log("Weather:", weather)
   console.log("Location:", location); // Log the location data
 
   return (
     <div>
-      {!location ? (
-        <button onClick={handleLocationClick}>Get Location</button>
-      ) : null}
-      {location && !weather ? <p>Loading weather data...</p> : null}
-      {weather ? (
-        <div>
-          <h2>Weather Data</h2>
-          <p>Temperature: {weather.hourly.temperature_2m[0]}°C</p>
-          <p>Max Temperature: {weather.daily.temperature_2m_max[0]}°C</p>
-          <p>Min Temperature: {weather.daily.temperature_2m_min[0]}°C</p>
-        </div>
-      ) : null}
+      <p>test
+      
+      </p>
     </div>
   );
 }
