@@ -1,13 +1,14 @@
 
 import './App.css'
-import { Fetching } from './components/Fetch'
+import { WeatherData } from './components/Fetch'
+
 
 function App() {
 
 
   return (
     <>
-      <Fetching/>
+      <WeatherData/>
     </>
   )
 }
